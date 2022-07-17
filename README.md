@@ -33,7 +33,7 @@ Also, be sure to have `git` available in your PATH, `npm` might need it (You can
       $ sudo apt install npm
 
 - #### Other Operating Systems
-  You can find more information about the installation on the [official Node.js website](https://nodejs.org/), [official NPM website](https://npmjs.org/),[official PNPM website](https://pnpm.io/installation) and [official YARN website](https://yarnpkg.com/getting-started).
+  You can find more information about the installation on the [official Node.js website](https://nodejs.org/), [official NPM website](https://npmjs.org/), [official PNPM website](https://pnpm.io/installation) and [official YARN website](https://yarnpkg.com/getting-started).
 
 If the installation was successful, you should be able to run the following command.
 
