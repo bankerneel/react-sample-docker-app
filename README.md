@@ -1,19 +1,29 @@
 # A Sample React App using Docker
 
-An Backend API for the [Loxcoin](https://loxcoin.io) cryptocurrency's current circulating supply.
+A Sample [React.js](https://reactjs.org/) Application Boilerplate with [Docker](https://www.docker.com/) created using [create-react-app](https://create-react-app.dev/).
 
 ---
 
-## Requirements
+## Pre-Requirements for the project
 
-For development, you will only need Node.js and a node global package, npm, installed in your environment.
+For development, you will need `Docker`, `Node.js`, a node global package like `npm`, `pnpm` or `yarn`, installed in your environment.
 
-### Node
+## Requirements Installations
 
-- #### Node installation on Windows
+### Docker
 
-  Just go on [official Node.js website](https://nodejs.org/) and download the installer.
-  Also, be sure to have `git` available in your PATH, `npm` might need it (You can find git [here](https://git-scm.com/)).
+- #### Docker Installation
+
+  You can download and install Docker on multiple platforms from [docs.docker.com](https://docs.docker.com).
+
+  [Windows](https://docs.docker.com/desktop/install/windows-install/),
+  [Mac](https://docs.docker.com/desktop/install/mac-install/) and
+  [Ubuntu](https://docs.docker.com/engine/install/ubuntu/)
+
+### Node Installation
+
+Just go on [official Node.js website](https://nodejs.org/) and download the installer.
+Also, be sure to have `git` available in your PATH, `npm` might need it (You can find git [here](https://git-scm.com/)).
 
 - #### Node installation on Ubuntu
 
@@ -23,7 +33,7 @@ For development, you will only need Node.js and a node global package, npm, inst
       $ sudo apt install npm
 
 - #### Other Operating Systems
-  You can find more information about the installation on the [official Node.js website](https://nodejs.org/) and the [official NPM website](https://npmjs.org/).
+  You can find more information about the installation on the [official Node.js website](https://nodejs.org/), [official NPM website](https://npmjs.org/),[official PNPM website](https://pnpm.io/installation) and [official YARN website](https://yarnpkg.com/getting-started).
 
 If the installation was successful, you should be able to run the following command.
 
@@ -33,6 +43,12 @@ If the installation was successful, you should be able to run the following comm
     $ npm --version
     6.14.15
 
+    $ pnpm --version
+    7.5.1
+
+    $ yarn --version
+    1.22.10
+
 If you need to update `npm`, you can make it using `npm`! Cool right? After running the following command, just open again the command line and be happy.
 
     $ npm install npm -g
@@ -41,12 +57,21 @@ If you need to update `npm`, you can make it using `npm`! Cool right? After runn
 
 ---
 
-## Install
+## Installing the project dependencies
 
     $ git clone https://github.com/bankerneel/react-sample-docker-app
     $ cd react-sample-docker-app
+
+## With NPM
+
     $ npm install
-    OR
+
+## With PNPM
+
+    $ pnpm install
+
+## With YARN
+
     $ yarn install
 
 ## Running the project in dev-mode
