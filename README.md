@@ -12,13 +12,19 @@ For development, you will need `Docker`, `Node.js`, a node global package like `
 
 ### Docker
 
-- #### Docker Installation
+- #### [docker](https://docker.com) Installation
 
   You can download and install Docker on multiple platforms from [docs.docker.com](https://docs.docker.com).
 
   [Windows](https://docs.docker.com/desktop/install/windows-install/),
   [Mac](https://docs.docker.com/desktop/install/mac-install/) and
   [Ubuntu](https://docs.docker.com/engine/install/ubuntu/)
+
+- #### [docker-compose](https://docs.docker.com/compose/) Installation
+
+  You can download and install docker-compose on multiple platforms from [docs](https://docs.docker.com/compose/install/compose-desktop).
+
+  [Windows](https://docs.docker.com/compose/install/windows-install/), [Mac](https://docs.docker.com/compose/install/mac-install/) and [Ubuntu](https://docs.docker.com/compose/install/ubuntu/)
 
 ### Node Installation
 
@@ -55,6 +61,8 @@ If you need to update `npm`, you can make it using `npm`! Cool right? After runn
 
 ###
 
+<p align="right">(<a href="#top">back to top</a>)</p>
+
 ---
 
 ## Installing the project dependencies
@@ -84,7 +92,7 @@ If you need to update `npm`, you can make it using `npm`! Cool right? After runn
     $ npm install -g serve
     $ serve -s build
 
-#
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 # Creating Docker build
 
@@ -100,14 +108,48 @@ If you need to update `npm`, you can make it using `npm`! Cool right? After runn
 
 ## Running the Docker image
 
-#
+## Dev Mode
 
     $ docker run -p 3000:3000 $CONTAINER_NAME
 
-#### OR
+## Production Mode
+
+    $   docker run -p 80:80 -d $CONTAINER_NAME
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+# Docker build using [docker-compose](https://docs.docker.com/compose/)
+
+## Dev Mode
+
+    $ docker-compose -f docker-compose.dev.yaml up -d --build
+
+## Production Mode
+
+    $ docker-compose -f docker-compose.prod.yaml up -d --build
+
+- ## Running the App
+  - GO to http://localhost:3000 for dev mode
+  - GO to http://localhost:80 for production mode
+  <p align="right">(<a href="#top">back to top</a>)</p>
 
 #
 
-    $ docker run -p 3000:3000 -d $CONTAINER_ID
+<!-- CONTRIBUTING -->
+
+## Contributing
+
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag `"enhancement"`.
+Don't forget to give the project a star! Thanks again!
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 ---
