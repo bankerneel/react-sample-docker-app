@@ -70,23 +70,23 @@ If you need to update `npm`, you can make it using `npm`! Cool right? After runn
     $ git clone https://github.com/bankerneel/react-sample-docker-app
     $ cd react-sample-docker-app
 
-## With NPM
+### With NPM
 
     $ npm install
 
-## With PNPM
+### With PNPM
 
     $ pnpm install
 
-## With YARN
+### With YARN
 
     $ yarn install
 
-## Running the project in dev-mode
+### Running the project in dev-mode
 
     $ npm start
 
-## Simple build for production
+### Simple build for production
 
     $ npm run buld
     $ npm install -g serve
@@ -94,13 +94,13 @@ If you need to update `npm`, you can make it using `npm`! Cool right? After runn
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-# Creating Docker build
+## Creating Docker build
 
-## Dev Mode
+### Dev Mode
 
     $ docker build -f Dockerfile.dev -t $CONTAINER_NAME .
 
-## Production Mode
+### Production Mode
 
 #
 
@@ -108,27 +108,27 @@ If you need to update `npm`, you can make it using `npm`! Cool right? After runn
 
 ## Running the Docker image
 
-## Dev Mode
+### Dev Mode
 
     $ docker run -p 3000:3000 $CONTAINER_NAME
 
-## Production Mode
+### Production Mode
 
     $   docker run -p 80:80 -d $CONTAINER_NAME
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-# Docker build using [docker-compose](https://docs.docker.com/compose/)
+## Docker build using [docker-compose](https://docs.docker.com/compose/)
 
-## Dev Mode
+### Dev Mode
 
     $ docker-compose -f docker-compose.dev.yaml up -d --build
 
-## Production Mode
+### Production Mode
 
     $ docker-compose -f docker-compose.prod.yaml up -d --build
 
-- ## Running the App
+- ### Running the App
   - GO to http://localhost:3000 for dev mode
   - GO to http://localhost:80 for production mode
   <p align="right">(<a href="#top">back to top</a>)</p>
