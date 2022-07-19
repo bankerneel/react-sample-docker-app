@@ -98,19 +98,11 @@ If you need to update `npm`, you can make it using `npm`! Cool right? After runn
 
         docker build -f Dockerfile.dev -t $CONTAINER_NAME .
 
-- ### Production Mode
-
-        docker build -f Dockerfile.prod -t $CONTAINER_NAME .
-
 ## Running the Docker image
 
 - ### Dev Mode
 
         docker run -p 3000:3000 $CONTAINER_NAME
-
-- ### Production Mode
-
-        docker run -p 80:80 -d $CONTAINER_NAME
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -120,13 +112,8 @@ If you need to update `npm`, you can make it using `npm`! Cool right? After runn
 
         docker-compose -f docker-compose.dev.yaml up -d --build
 
-- ### Production Mode
-
-        docker-compose -f docker-compose.prod.yaml up -d --build
-
 - ### Running the App
   - GO to http://localhost:3000 for dev mode
-  - GO to http://localhost:80 for production mode
   <p align="right">(<a href="#top">back to top</a>)</p>
 
 #
